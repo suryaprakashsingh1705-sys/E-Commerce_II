@@ -1,0 +1,19 @@
+E-Commerce Web Application with Product Filtering, Sorting, and API Integration...
+
+A user input form will be created using HTML and CSS. 
+
+HTML is used to structure the E-commerce layout and product UI.
+
+CSS (basic + dynamic) is used for styling, layout design, and responsiveness.
+
+JavaScript is used for API integration, searching, sorting, and handling functions with variables.
+
+The project follows proper file separation with individual HTML, CSS, and JavaScript files.
+
+Products include images, prices, and search functionality based on price filtering.
+
+The project contains only three categories of products for simplicity and clarity.
+
+The project includes 10–15 organized files for better structure and scalability.
+
+Ten - twenth files will be added to the project.
