@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Store</title>
+    <title>Echo & Ember Store</title>
+
     <link rel="stylesheet" href="index.css">
+   
 </head>
 <body>
 
 <header>
     <div class="header">
-        <div class="logo"> 
-            <img src="logo.png" >
-            Product 
+        <div class="logo">
+            Echo & Ember
         </div>
 
         <div class="search-container">
@@ -21,33 +22,72 @@
 
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index_form.html">Login</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
-<h1>Product Store</h1>
+<h1 class="main-title">Welcome to Product Store</h1>
+
 
 <div class="filters">
-  <select id="category">
-    <option value="all">All</option>
-    <option value="fragrances">Fragrances</option>
-    <option value="groceries">Groceries</option>
-  </select>
+    <select id="category">
+        <option value="all">All</option>
+        <option value="smartphones">Smartphones</option>
+        <option value="laptops">Laptops</option>
+        <option value="fragrances">Fragrances</option>
+    </select>
 
-  <select id="sort">
-    <option value="default">Sort</option>
-    <option value="low">Low to High</option>
-    <option value="high">High to Low</option>
-  </select>
+    <select id="sort">
+        <option value="">Sort</option>
+        <option value="low">Price Low → High</option>
+        <option value="high">Price High → Low</option>
+    </select>
 </div>
 
-<div id="products"></div>
 
-<script src="index.js"></script>
+<div class="products" id="products"></div>
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h2>Echo & Ember</h2>
+            <p>Modern e-commerce platform with fast delivery & secure shopping.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+                <li>📞 1234567890</li>
+                <li>📧 echoember@gmail.com</li>
+                <li>🕒 24/7</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© <span id="year"></span> Echo & Ember</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+ 
+
 </body>
 </html>

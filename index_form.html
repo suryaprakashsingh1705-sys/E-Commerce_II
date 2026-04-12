@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+<link rel="stylesheet" href="index.css">
+
+<style>
+body { margin:0; font-family:Arial; background:#f2f2f2; }
+
+.header {
+    display:flex;
+    justify-content:space-between;
+    background:#222;
+    color:white;
+    padding:15px;
+}
+nav ul { display:flex; list-style:none; }
+nav ul li { margin:0 10px; }
+nav a { color:white; text-decoration:none; }
+nav a:hover { color:orange; }
+
+.container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+
+.form-box {
+    background:white;
+    padding:30px;
+    width:300px;
+}
+
+input { width:100%; margin:10px 0; padding:8px; }
+button { width:100%; padding:10px; background:green; color:white; border:none; }
+</style>
+</head>
+
+<body>
+
+    <header>
+    <div class="header">
+        <div class="logo">
+            Echo & Ember
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search products...">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index_form.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+<div class="form-box">
+<h2>Contact Form</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Mobile</label>
+        <input type="tel" placeholder="Enter your mobile number" required>
+
+        <label>Gmail</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        
+    </form>
+
+<button>Submit</button>
+</div>
+</div>
+
+</body>
+</html>

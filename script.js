@@ -13,21 +13,19 @@ async function fetchProducts() {
   }
 }
 
-
 function displayProducts(products) {
   let container = document.getElementById("products");
 
   container.innerHTML = products.map(p => `
     <div class="card">
-      <img src="${p.thumbnail}" alt="${p.title}">
+      <img src="${p.thumbnail}">
       <h3>${p.title}</h3>
       <p>₹${p.price}</p>
-      <p class="rating">⭐ ${p.rating}</p>
+      <p>⭐ ${p.rating}</p>
       <button onclick="addToCart('${p.title}')">Add to Cart</button>
     </div>
-  `).join("");
+  `).join(""); 
 }
-
 
 function filterData() {
   let category = document.getElementById("category").value;
@@ -59,8 +57,12 @@ function addToCart(title) {
   alert(title + " added to cart 🛒");
 }
 
+
 document.getElementById("category").addEventListener("change", filterData);
 document.getElementById("sort").addEventListener("change", filterData);
 document.getElementById("search").addEventListener("input", filterData);
 
-fetchProducts();
+
+document.getElementById("year").innerText = new Date().getFullYear();
+
+fetchProducts(); 
